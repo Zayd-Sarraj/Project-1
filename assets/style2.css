@@ -1,0 +1,44 @@
+.navbar {
+    margin-bottom: 0px;
+}
+a.navbar-item.is-hovered:hover {
+    color: tomato;
+}
+.notification.has-background-white { 
+    background-color: hsl(0, 0%, 100%);
+    
+}
+.bookmark {
+    margin-top: -10PX;
+}
+.container2 {
+    text-align: center;
+    padding: 90px;
+    font-size: 30px;
+}
+/* Float three columns side by side */
+.col-md-4 {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+    margin-left: 90px;
+
+}
+/* remove extra left and right margins due to padding in colums */
+.row {
+    margin: 0 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+/* Clear floats after the colums */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.media { 
+    margin-bottom: -15px;
+}
+.title.is-7 {
+    padding: ;
+}
