@@ -25,7 +25,7 @@ a.navbar-item.is-hovered:hover {
 
 }
 /* remove extra left and right margins due to padding in colums */
-.row {
+.row.row2.row3 {
     margin: 0 50px;
     padding-left: 30px;
     padding-right: 30px;
@@ -42,4 +42,27 @@ a.navbar-item.is-hovered:hover {
 .title.is-7 {
     padding: 10px;
     margin-left: -10px;
+}
+.content {
+    margin-left: -20px;
+    width: 300px;
+    font-weight: bold;
+}
+a.has-text-tomato {
+    color: tomato;
+    font-weight: bold;  
+}
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: lawngreen;
+    z-index: -1;
+    transition: background 0.3s linear;
+}
+input {
+    display: none;
+
 }
