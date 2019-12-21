@@ -40,5 +40,6 @@ a.navbar-item.is-hovered:hover {
     margin-bottom: -15px;
 }
 .title.is-7 {
-    padding: ;
+    padding: 10px;
+    margin-left: -10px;
 }
