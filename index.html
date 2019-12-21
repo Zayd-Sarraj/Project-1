@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <!-- Bulma CSS Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
-    <title>Topiks</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Homepage</title>
 </head>
+
 <body>
-<!-- Title Div -->
-<div>Topiks</div>
+    <div class="backDIV">
+        <img class="backIMG" src="assets/images/Yellowbulb.jpg">
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn" onclick="myFunction()">CLICK ME</button>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <button>Technology</button>
+                <button>Health</button>
+                <button>Style</button>
+                <button>Media</button>
+                <button>Travel</button>
+                <button>Food</button>
+            </div>
+
+        </div>
+    </div>
+    <!-- Title Div -->
+
+
+    <script src="assets/javascript/script.js"></script>
+</body>
+
+
+</html>
 <!-- On page load, user sees a dropdown to choose a topic -->
 
 <!-- Topics: Tech, Style, Travel, Desserts, Health, Media -->
@@ -18,9 +46,6 @@
 <!-- Clicking on any single article opens up that article -->
 
 <!-- Users can save an article using Pocket api  -->
-</body>
-</html>
-
 
 <!-- Blogger API Key = AIzaSyDMXLDfPyCSdsrUpk8nFNjnRMr_E-t1DXE  -->
 <!-- Pocket API Key = 88966-ec1457a48e083c86030d2346 -->

@@ -52,17 +52,3 @@ a.has-text-tomato {
     color: tomato;
     font-weight: bold;  
 }
-.bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: lawngreen;
-    z-index: -1;
-    transition: background 0.3s linear;
-}
-input {
-    display: none;
-
-}
