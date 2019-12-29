@@ -1,66 +1,70 @@
 .backIMG {
-    height: 90%;
+    height: 745px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-
 }
 .backDIV {
     height: 80%;
     margin: auto;
     width: 100%;
-
     position: relative;
-
 }
-
 #myBtn{
-    z-index: 99;
-    position: absolute;
-    bottom: 30%;
-    right: 45%;
-    height: 50px;
-    width: 120px;
-    background-color: black;
-    color: white;
-    font-size: 14px;
-    border-radius: 4px;
+  z-index: 99;
+  position: absolute;
+  bottom: 30%;
+  right: 45%;
+  height: 50px;
+  width: 120px;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  border-radius: 4px;
 }
 /* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+#mymodal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+}
+/* Modal */
+  #myModal {
+    width: 300px;
+    height: 470px;
+    margin-left: 450px;
+    margin-bottom: -500x;
+    margin-top: 150px;
+    margin-bottom: 200px;
+    border: black solid;
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
-  
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+  /* Centered an aligned buttons in modal */
+  .list-group {
+    margin-right: 50px;
+    margin-bottom: 500px;
   }
-  
-  /* The Close Button */
+  /* Buttons for categories within modal  */
+  button.list-group-item.list-group-item-action {
+    background: black;
+    color: white;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: px;
+  }
+  /* Close button (X) to close modal */
   .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+    margin-left: 270px;
   }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
+
   

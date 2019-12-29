@@ -1,5 +1,13 @@
 .navbar {
     margin-bottom: 0px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-bottom: black;
+
+}
+.logo {
+    height: 220px;
+    width: 130px;
 }
 a.navbar-item.is-hovered:hover {
     color: tomato;
@@ -45,10 +53,19 @@ a.navbar-item.is-hovered:hover {
 }
 .content {
     margin-left: -20px;
-    width: 300px;
+    width: 290px;
     font-weight: bold;
+    font-size: 12px;
+    margin-top: -20px;
 }
 a.has-text-tomato {
     color: tomato;
-    font-weight: bold;  
+    font-weight: bold;
+}
+#switch.is-thin.is-rounded.is-outlined.is-info.is-rtl.has-background-black::before {
+    color: hsl(0, 0%, 4%);
+
+}
+.logo:hover {
+    background: white;
 }
