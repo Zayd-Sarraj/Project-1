@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 var topic = ""
 // Make a variable out of the Switch
 var contentSwitch = document.getElementById("newsSwitch")
@@ -101,3 +103,4 @@ function pageLoad() {
 }
 // Run the pageload function
 pageLoad()
+>>>>>>> a460f735ea88b6b10228c2c5e5b25b55ff36003d
