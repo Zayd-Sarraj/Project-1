@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 var topic = ""
 // Make a variable out of the Switch
 var contentSwitch = document.getElementById("newsSwitch")
@@ -92,7 +90,7 @@ $(".topicBtn").click(function (event) {
     // Save the topic of that button to session storage
     sessionStorage.setItem("topic", $(event.target).text())
     // Open the landing page
-    window.open("landingpage.html", '_top');
+    window.open("landingPage.html", '_top');
 })
 // On page load
 function pageLoad() {
@@ -103,4 +101,3 @@ function pageLoad() {
 }
 // Run the pageload function
 pageLoad()
->>>>>>> a460f735ea88b6b10228c2c5e5b25b55ff36003d
