@@ -25,19 +25,21 @@ function getNews() {
     }).then(function (response) {
         // Logs the topic and data response from the API call
         // console.log($(event.target).text())
-        // console.log(response)
+        console.log(response)
         // Loop to add results to their divs, loops 9 times
         for (var i = 1; i < 10; i++) {
             // Add the title to the div with the matching numbered ID
             $("#" + i).text(response.articles[i].title)
-            console.log($("#img" + i))
+            console.log(response.articles[i].content)
             console.log(i);
             // Add the image to the <img> element with the matching numbered ID
             $("#img" + i).attr("src", response.articles[i].urlToImage);
             // Add the link to the article to the image 
             $("#img" + i).attr("href", response.articles[i].url);
-            // Add the description of the article to the div with the matching numebered ID           
-            $("#content" + i).text(response.articles[i].description)
+            // Add the description of the article to the div with the matching numebered ID
+            var firstSentence = response.articles[i].content.split(" ", 20)
+            console.log(firstSentence)
+            $("#content" + i).text(firstSentence.join(' ') + "...")
         }
     })
 }
@@ -55,7 +57,7 @@ function getVideos() {
         // Loop to add results to their divs, loops 9 times
         for (var i = 1; i < 10; i++) {
             // Add the title to the div with the matching numbered ID
-            $("#" + i).text(response.items[i].snippet.title)
+            $("#" + i).text(response.items[i].snippet.channelTitle)
             console.log($("#img" + i))
             console.log(i);
             // Add the image to the <img> element with the matching numbered ID
@@ -63,7 +65,7 @@ function getVideos() {
             // Add the link to the video to the image 
             $("#img" + i).attr("href", "https://www.youtube.com/watch?v=" + response.items[i].id.videoId);
             // Add the description of the video to the div with the matching numebered ID
-            $("#content" + i).text(response.items[i].snippet.description)
+            $("#content" + i).text(response.items[i].snippet.title)
         }
     })
 }
