@@ -7,7 +7,11 @@
 }
 .logo {
     height: 220px;
-    width: 130px;
+    width: 120px;
+    background: white;
+}
+.logo:hover {
+    background: white;
 }
 a.navbar-item.is-hovered:hover {
     color: tomato;
@@ -54,7 +58,6 @@ a.navbar-item.is-hovered:hover {
 .content {
     margin-left: -20px;
     width: 290px;
-    font-weight: bold;
     font-size: 12px;
     margin-top: -20px;
 }
@@ -62,10 +65,37 @@ a.has-text-tomato {
     color: tomato;
     font-weight: bold;
 }
-#switch.is-thin.is-rounded.is-outlined.is-info.is-rtl.has-background-black::before {
-    color: hsl(0, 0%, 4%);
-
-}
 .logo:hover {
     background: white;
+}
+
+.toggle {
+    margin-right: 100px;
+    margin-top: -8px;
+}
+.field.has-addons {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.control { 
+    width: 200px;
+    height: 5px;
+    padding: -20px;
+    margin-left: 100px;
+    position: fixed;
+    float: left;
+}
+.button.is-info.has-background {
+    background: tomato;
+    width: 60px;
+    
+}
+button.is-info.has-background:hover {
+    background: tomato;
+}
+.buttons.has-background-black {
+   
+}
+footer {
+    background: blueviolet;
 }
