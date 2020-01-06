@@ -1,6 +1,5 @@
+
 .navbar {
-    margin-bottom: 0px;
-    margin-top: 20px;
     margin-bottom: 30px;
     border-bottom: black;
 
@@ -8,7 +7,7 @@
 .logo {
     height: 220px;
     width: 120px;
-    background: white;
+    background: transparent;
 }
 .logo:hover {
     background: white;
@@ -33,7 +32,7 @@ a.navbar-item.is-hovered:hover {
     float: left;
     width: 25%;
     padding: 0 10px;
-    margin-left: 90px;
+    margin-left: 6%;
 
 }
 /* remove extra left and right margins due to padding in colums */
