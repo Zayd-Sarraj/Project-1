@@ -26,27 +26,38 @@ function getNews() {
         // Logs the topic and data response from the API call
         // console.log($(event.target).text())
         console.log(response)
-        // Loop to add results to their divs, loops 9 times
-        for (var i = 1; i < 10; i++) {
-            // Add the title to the div with the matching numbered ID
-            $("#" + i).text(response.articles[i].title)
-            console.log(response.articles[i].content)
-            console.log(i);
+        // Loop to add results to their divs, loops 18 times
+        for (var i = 1; i < 19; i++) {
+            // console.log(response.articles[i].content)
+            // console.log(i);
             // Add the image to the <img> element with the matching numbered ID
             $("#img" + i).attr("src", response.articles[i].urlToImage);
             // Add the link to the article to the image 
             $("#img" + i).attr("href", response.articles[i].url);
+            if (response.articles[i].content == null) {
+                continue;
+              }
+            // Add the title to the div with the matching numbered ID
+            $("#" + i).text(response.articles[i].title)
+            if (response.articles[i].content == null) {
+                continue;
+              }
             // Add the description of the article to the div with the matching numebered ID
-            var firstSentence = response.articles[i].content.split(" ", 20)
-            console.log(firstSentence)
-            $("#content" + i).text(firstSentence.join(' ') + "...")
+            var longResponse = response.articles[i].content
+            // console.log(firstSentence)
+            $("#content" + i).text(shorten(longResponse, 120) + "...")
         }
     })
 }
+// Function to shorten a string 
+function shorten(str, maxLen, separator = ' ') {
+    if (str.length <= maxLen) return str;
+    return str.substr(0, str.lastIndexOf(separator, maxLen));
+  }
 // API Call function to get video results
 function getVideos() {
     // Set the video API URL using the topic the user clicked on
-    var videosQueryURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&q=" + topic + "&type=video&maxResults=10&key=AIzaSyAXfNjKjSqLmk8Y7yfbis7sb8K3xzmiDw4"
+    var videosQueryURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&q=" + topic + "&type=video&maxResults=20&key=AIzaSyAXfNjKjSqLmk8Y7yfbis7sb8K3xzmiDw4"
     $.ajax({
         url: videosQueryURL,
         method: "GET"
@@ -54,12 +65,12 @@ function getVideos() {
         // Logs the topic and the data response from the API call
         // console.log($(event.target).text())
         console.log(response)
-        // Loop to add results to their divs, loops 9 times
-        for (var i = 1; i < 10; i++) {
+        // Loop to add results to their divs, loops 18 times
+        for (var i = 1; i < 19; i++) {
             // Add the title to the div with the matching numbered ID
             $("#" + i).text(response.items[i].snippet.channelTitle)
-            console.log($("#img" + i))
-            console.log(i);
+            // console.log($("#img" + i))
+            // console.log(i);
             // Add the image to the <img> element with the matching numbered ID
             $("#img" + i).attr("src", response.items[i].snippet.thumbnails.medium.url);
             // Add the link to the video to the image 
@@ -103,3 +114,18 @@ function pageLoad() {
 }
 // Run the pageload function
 pageLoad()
+
+// If the search button is clicked 
+$('.searchButton').click(function (event) { 
+    event.preventDefault();
+    // Set the topic to the user's query in the search box 
+    topic = document.getElementById('searchBox').value;
+    console.log(topic)
+    // Search for videos or articles depending on the switch
+    if (contentSwitch.value === "false") {
+        getVideos()
+    }
+    else {
+        getNews()
+    }
+})
