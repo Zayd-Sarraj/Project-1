@@ -1,12 +1,14 @@
-
+body {
+    width: 100%;
+}
 .navbar {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     border-bottom: black;
 
 }
 .logo {
     height: 220px;
-    width: 120px;
+    width: 110px;
     background: transparent;
 }
 .logo:hover {
@@ -24,8 +26,9 @@ a.navbar-item.is-hovered:hover {
 }
 .container2 {
     text-align: center;
-    padding: 90px;
+    padding: 120px;
     font-size: 30px;
+    margin-bottom: 200px;
 }
 /* Float three columns side by side */
 .col-md-4 {
@@ -36,10 +39,11 @@ a.navbar-item.is-hovered:hover {
 
 }
 /* remove extra left and right margins due to padding in colums */
-.row.row2.row3 {
+.row.row2.row3.row4 {
     margin: 0 50px;
     padding-left: 30px;
     padding-right: 30px;
+    
 }
 /* Clear floats after the colums */
 .row:after {
@@ -53,6 +57,7 @@ a.navbar-item.is-hovered:hover {
 .title.is-7 {
     padding: 10px;
     margin-left: -10px;
+    font-weight: bold;
 }
 .content {
     margin-left: -20px;
@@ -84,17 +89,7 @@ a.has-text-tomato {
     position: fixed;
     float: left;
 }
-.button.is-info.has-background {
-    background: tomato;
-    width: 60px;
-    
-}
-button.is-info.has-background:hover {
-    background: tomato;
-}
-.buttons.has-background-black {
-   
-}
-footer {
-    background: blueviolet;
+.button.is-info.has-background.is-hovered {
+    background: black;
+    width: 60px;   
 }
