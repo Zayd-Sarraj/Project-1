@@ -29,4 +29,4 @@ Youtube Api
 NewsApi
 
 #  Direct link to site:
-https://zaydorade.github.io/Project-1/
+https://Zayd-Sarraj.github.io/Project-1/
