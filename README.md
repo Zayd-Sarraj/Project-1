@@ -14,20 +14,20 @@ This website provids users with articles or videos based on their topic of choic
  ​
 ## Known Bugs
 ​
-*Null response from the API call can prevent the following cards in the loop from displaying correctly
-*Result cards are sometimes misaligned 
+* Null response from the API call can prevent the following cards in the loop from displaying correctly
+* Result cards are sometimes misaligned 
 ​
 ## Technologies Used
 ​
-*HTML
+* HTML
 ​
-*CSS (Bulma, Bootstrap)
+* CSS (Bulma, Bootstrap)
 ​
-*Javascript
+* Javascript
 ​
-*Youtube Api
+* Youtube Api
 ​
-*NewsApi
+* NewsApi
 
 #  Direct link to site:
 https://Zayd-Sarraj.github.io/Project-1/
