@@ -19,14 +19,15 @@ This website provids users with articles or videos based on their topic of choic
 ​
 ## Technologies Used
 ​
-HTML
+*HTML
 ​
-CSS (Bulma, Bootstrap)
+*CSS (Bulma, Bootstrap)
 ​
-Javascript
+*Javascript
 ​
-Youtube Api
-NewsApi
+*Youtube Api
+​
+*NewsApi
 
 #  Direct link to site:
 https://Zayd-Sarraj.github.io/Project-1/
